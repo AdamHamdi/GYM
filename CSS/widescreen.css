@@ -1,0 +1,14 @@
+/* programs */
+
+#programs .boxes .box {
+    display: flex;
+    text-align: left;
+}
+
+#programs .boxes .box img {
+    align-self: center;
+    margin-right: 0.5rem;
+}
+
+
+/* <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1Wn6cmp-iq7DrsuudaGXrEAc1Hh68ZyQ&callback=initMap&libraries=&v=weekly " async></script>*/
