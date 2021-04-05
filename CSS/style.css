@@ -15,6 +15,9 @@
         font-family: 'Roboto', sans-serif;
         line-height: 1.5;
     }
+    /* html {
+        scroll-behavior: smooth;
+    } */
     
     a {
         text-decoration: none;
@@ -48,12 +51,22 @@
         padding: 1.5rem 0;
     }
     
+    .p-1 {
+        padding: 1.5rem;
+    }
+    
     .btn {
         background-color: #08D9D6;
         color: white;
         padding: 0.75rem 1.5rem;
         border-radius: 5px;
         text-transform: capitalize;
+    }
+    
+    .btn-dark {
+        background-color: #252A34;
+        color: white;
+        text-align: center;
     }
     
     .btn:hover {
@@ -76,15 +89,21 @@
     .lead {
         font-size: 1.5rem;
     }
+    
+    .bg-primary {
+        background-color: #08D9D6;
+        color: #fff;
+    }
     /* Navbar*/
     
     #navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem;
+        padding: 0.75rem;
         position: sticky;
         top: 0;
+        /* opacity: 0.9; */
         z-index: 1;
     }
     
@@ -130,7 +149,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-bottom: 1.5rem;
     }
     
     #about .about-content div,
@@ -181,4 +199,63 @@
         width: 70px;
         padding: 0.5rem;
         border-radius: 100%;
+    }
+    /*  Trainers  */
+    
+    #trainers .trainers-boxes {
+        display: flex;
+    }
+    
+    #trainers .trainers-boxes .trainer-box {
+        background-color: white;
+        flex: 1;
+        border-radius: 5px;
+        margin: 1rem;
+    }
+    
+    #trainers .trainers-boxes .trainer-box img {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    #trainers .trainers-boxes .trainer-box ul {
+        display: flex;
+        list-style: none;
+    }
+    
+    #trainers .trainers-boxes .trainer-box ul li a {
+        color: #252a34;
+        margin-right: 10px;
+    }
+    
+    #trainers .trainers-boxes .trainer-box ul li a:hover {
+        color: #FF2E63;
+    }
+    /*   Section contact  */
+    
+    #contact {
+        display: flex;
+    }
+    
+    #contact .contact-us,
+    #contact #map {
+        flex: 1;
+    }
+    
+    #contact .contact-us input,
+    #contact .contact-us textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: none;
+        margin-bottom: 1rem;
+        outline: none;
+    }
+    
+    #contact .contact-us .form-group {
+        display: flex;
+    }
+    
+    #contact .contact-us .form-group input[type="text"] {
+        margin-right: 0.75rem;
     }

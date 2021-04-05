@@ -44,7 +44,7 @@
         </div>
     </section>
     <!-- About section -->
-    <section id="about" class="bg-light">
+    <section id="about" class="bg-light py-1">
         <div class="container">
             <h2 class="m-heading text-center py-1">Hello, we are the <span class="text-primary">GYM</span>
 
@@ -74,9 +74,9 @@
 
     </section>
     <!-- Program section -->
-    <section id="programs" class="text-center">
+    <section id="programs" class="text-center py-1">
         <h2 class="m-heading text-center py-1">
-            Our <span class="text-primary">Prorams</span>
+            Our <span class="text-primary">Programs</span>
         </h2>
         <div class="container">
             <div class="boxes">
@@ -108,10 +108,121 @@
             </div>
         </div>
     </section>
+    <!-- Trainer -->
+    <section id="trainers" class="bg-light py-1">
+        <h2 class="m-heading text-center py-1">
+            Expert <span class="text-primary">Trainers</span>
+        </h2>
+        <div class="container">
+            <div class="trainers-boxes">
+                <div class="trainer-box box-shadow p-1">
+                    <img src="./img/trainer-1.jpg" alt="Trainer 1">
+                    <span class="text-primary">Strenth Trainer</span>
+                    <h4>Ivan Samkov</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, cumque.</p>
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="trainer-box box-shadow p-1">
+                    <img src="./img/trainer-2.jpg" alt="Trainer 1">
+                    <span class="text-primary">Yoga Trainer</span>
+                    <h4>Karolina Grabwska</h4>
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, cumque.</p>
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="trainer-box box-shadow p-1">
+                    <img src="./img/trainer-3.jpg" alt="Trainer 1">
+                    <span class="text-primary">BodyBuilding Trainer</span>
+                    <h4>Adrea Piacquadio</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, cumque.</p>
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact section -->
+    <section id="contact">
+        <div class="contact-us p-1 bg-primary">
+            <h2 class="m-heading">Feel free to ask anything</h2>
+            <form action="">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="email " name="email" placeholder="Email">
+                </div>
+                <div>
+                    <input type="text" name="subject" placeholder="Subject">
+
+                </div>
+                <div>
+                    <textarea name="message" placeholder="Message" cols="10" rows="10"></textarea>
+
+                </div>
+                <div>
+                    <input type="submit" value="Submit" class="btn btn-dark">
+
+                </div>
+            </form>
+        </div>
+        <div id="map"></div>
+    </section>
+    <!-- Footer section -->
+    <footer class=" bg-dark py-1 text-center">
+        Copyright &copy; 2020, The GM, All Right Reserved
+    </footer>
+    <script src="./js/main.js"></script>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1Wn6cmp-iq7DrsuudaGXrEAc1Hh68ZyQ&callback=initMap&libraries=&v=weekly " async></script>
     <!-- font-awesome -->
-    <script src="https://kit.fontawesome.com/46a05c488f.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/46a05c488f.js " crossorigin="anonymous "></script>
     <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <!-- AIzaSyAQs8iMscQ9OHQ2gfuWWC-JuBzzacKW9K -->
+    <script type="text/javascript">
+        //Smoothscrolling opacity
+        $("#navbar a, .btn").on("click", function(event) {
+            if (this.hash != "") {
+                // alert("i am in loop");
+                event.preventDefault();
+                const hash = this.hash;
+                console.log(hash);
+
+                $("html, body").animate({
+                        scrollTop: $(hash).offset().top - 100,
+                    },
+                    800
+                );
+            }
+        });
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 150) {
+                document.querySelector("#navbar").style.opacity = 0.9;
+            } else {
+                document.querySelector("#navbar").style.opacity = 1;
+            }
+        });
+    </script>
 </body>
 
 </html>
