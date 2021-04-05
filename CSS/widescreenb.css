@@ -1,11 +1,11 @@
 /* programs */
 
-#programs .boxes .box {
+#programs .box {
     display: flex;
     text-align: left;
 }
 
-#programs .boxes .box img {
+img {
     align-self: center;
     margin-right: 0.5rem;
 }
