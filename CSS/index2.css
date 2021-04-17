@@ -1,0 +1,162 @@
+/*roboto font*/
+    
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Colors uses= #08D9D6 - #252A34 - #FF2E63 - #EAEAEA*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Main Style*/
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+.lead{
+    font-size: 1.5rem;
+}
+a{text-decoration: none;}
+
+/** Utility classes */
+.bg-dark{
+    background-color:#252A34 ;
+}
+.bg-light{
+    background-color: #EAEAEA;
+}
+.text-center{
+    text-align: center;
+    /*  */
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+.text-danger{
+    color: #FF2E63;
+}
+.box-shaddow{
+    box-shadow:  0 0 2px #252525;
+}
+.btn{
+    background-color: #08D9D6;
+    padding:1rem 1.5rem;
+    border-radius:5px;
+    text-transform:capitalize;
+    color: #fff;
+}
+.btn:hover{
+    background-color: #FF2E63;
+    
+}
+.container{
+    width:80%;
+    margin: auto;
+}
+.py-1{
+    padding: 1.5rem;
+}
+.l-heading{
+    font-size: 3rem;
+}
+.heading2{
+    font-size: 2rem;}
+
+/** navbar section */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    position:sticky;
+    top:0;
+
+    
+}
+#navbar .logo img{
+    width:80px;
+    
+}
+#navbar ul{
+    list-style: none;
+    display:flex;
+    
+}
+#navbar ul li a{
+    color:#fff;
+    padding: 1rem;
+}
+#navbar ul li a:hover{
+    background-color:#08D9D6;
+    padding: 1rem;
+    border-radius:5px;
+}
+/* showcase */
+#showcase{
+    background: #252A34 url(../img/showcase.jpg) no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    
+}
+#showcase .showcase-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.8);
+    
+}
+/* about-us */
+#about .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about .about-content div,
+#about .about-content img {
+    flex: 1;
+}
+
+#about .about-content img {
+    width: 50%;
+    margin: 1.5rem;
+    border: 5px solid#fff;
+}
+/* cta */
+
+#cta{
+    background: url(../img/cta.jpg) no-repeat center/cover;
+    color:white;
+   
+}
+#cta .cta-content{
+    min-height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.6);
+        overflow: hidden;
+        padding: 1.5rem;
+}
+/* programs */
+#programs .boxes {
+    display: flex;
+    justify-content: center;
+}
+#programs .boxes .box{
+    flex: 1;
+    padding: 1rem;
+
+}
+#programs .boxes .box img{
+    width:70px;
+    background-color:#08D9D6 ;
+    border-radius: 100%;
+    padding:0.5rem;
+}
