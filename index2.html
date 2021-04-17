@@ -102,9 +102,9 @@
 
     </section>
     <!-- end -->
-    <section id="trainer" class="bg-light text-center">
+    <section id="trainer" class="bg-light py-1">
         <h1 class="heading2 py-1 text-center ">Expert <span class="text-danger">Trainers</span></h1>
-    <div class="trainers-boxes">
+    <div class="trainers-boxes container">
         <div class="trainer-box box-shaddow py-1">
             <img src="./img/trainer-1.jpg" alt="trainer1">
             
@@ -154,11 +154,69 @@
     </section>
     <!-- end -->
     <section id="contact">
+        <div id="contact-us" class="py-1">
+            <h2 class="m-heading p-1">Feel free to ask anything</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="email " name="email" placeholder="Email">
+                </div>
+                <div>
+                    <input type="text" name="subject" placeholder="Subject">
 
+                </div>
+                <div>
+                    <textarea name="message" placeholder="Message" cols="10" rows="10"></textarea>
+
+                </div>
+                <div>
+                    <input type="submit" value="Submit" class="btn-dark ">
+
+                </div>
+            </form>
+        </div>
+        <div id="map">
+
+        </div>
     </section>
     <!-- end -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+     <!-- Footer section -->
+     <footer class=" bg-dark py-1 text-center ">
+        Copyright &copy; 2020, The GYM, All Right Reserved
+    </footer>
+    <script src="./js/main.js"></script>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1Wn6cmp-iq7DrsuudaGXrEAc1Hh68ZyQ&callback=initMap&libraries=&v=weekly " async></script>
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/46a05c488f.js " crossorigin="anonymous "></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <!-- AIzaSyAQs8iMscQ9OHQ2gfuWWC-JuBzzacKW9K -->
+    <script type="text/javascript">
+        //Smoothscrolling opacity
+        $("#navbar a, .btn").on("click", function(event) {
+            if (this.hash != "") {
+                // alert("i am in loop");
+                event.preventDefault();
+                const hash = this.hash;
+                console.log(hash);
+
+                $("html, body").animate({
+                        scrollTop: $(hash).offset().top - 100,
+                    },
+                    800
+                );
+            }
+        });
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 150) {
+                document.querySelector("#navbar").style.opacity = 0.9;
+            } else {
+                document.querySelector("#navbar").style.opacity = 1;
+            }
+        });
+    </script>
 </body>
 
 </html>

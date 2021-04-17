@@ -37,6 +37,9 @@
         }
         /**** trainers */
         
+        #trainer .trainers-boxes {
+            display: block;
+        }
         #trainers .trainers-boxes {
             display: block;
         }

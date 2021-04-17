@@ -23,6 +23,11 @@ a{text-decoration: none;}
 /** Utility classes */
 .bg-dark{
     background-color:#252A34 ;
+    color:#fff;
+}
+.p-1{
+    padding: 1.5rem;
+    font-size: 2rem;
 }
 .bg-light{
     background-color: #EAEAEA;
@@ -42,7 +47,7 @@ a{text-decoration: none;}
 }
 .btn{
     background-color: #08D9D6;
-    padding:1rem 1.5rem;
+    padding:0.75rem 1.5rem;
     border-radius:5px;
     text-transform:capitalize;
     color: #fff;
@@ -160,3 +165,73 @@ a{text-decoration: none;}
     border-radius: 100%;
     padding:0.5rem;
 }
+/* trainers */
+#trainer .trainers-boxes{
+    display: flex;
+   
+}
+#trainer .trainers-boxes .trainer-box{
+    border-radius:5px;
+    background-color: white;
+    margin: 1rem;
+    flex: 1;
+    
+}
+#trainer .trainers-boxes .trainer-box img{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#trainer .trainers-boxes .trainer-box ul{
+    list-style: none;
+}
+#trainer .trainers-boxes .trainer-box ul li a{
+    color:#252525;
+    margin-right:0.25rem;
+}
+#trainer .trainers-boxes .trainer-box ul li a:hover{
+    color:#FF2E63;
+   
+}
+/* contact */
+#contact {
+    display: flex;
+}
+#contact #contact-us,
+#contact #map {
+    flex: 1;
+}
+#contact #contact-us{
+    background-color: #08D9D6;
+    color:#fff;
+    padding: 1.5rem;
+    
+}
+#contact #contact-us input,
+#contact #contact-us textarea{
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    margin-bottom: 1rem;
+    outline: none;
+}
+#contact #contact-us .form-group{
+    display: flex;
+    
+}
+#contact #contact-us .form-group input[type="text"] {
+    margin-right: 0.75rem;
+}
+.btn-dark{
+   background-color: #252525;
+   color:#fff;
+   border-radius:5px;
+
+}
+.btn-dark:hover{
+    background-color: #FF2E63;
+}
+
+
+
+
